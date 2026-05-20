@@ -1,9 +1,11 @@
 Secure and Distributed Web Infrastructure - Library App
 
 *Project Overview*
+
 This project demonstrates the design and implementation of a highly available, scalable, and secure containerized web infrastructure using Docker Compose. The architecture simulates a production-ready environment by decoupling services, enforcing network security, distributing traffic, and implementing database replication.
 
 *Architecture & Component Breakdown*
+
 The infrastructure is orchestrated using an 8-container ecosystem, where each component serves a single, dedicated responsibility:
 
 - Reverse Proxy & Load Balancer (Nginx): Acts as the single entry point. It handles incoming traffic via HTTPS (port 8443), terminates SSL/TLS certificates, enforces Access Control Lists (ACL), and balances loads across the web application replicas.
@@ -23,6 +25,7 @@ The infrastructure is orchestrated using an 8-container ecosystem, where each co
 - Mail Testing Server (Mailpit): Captures outgoing emails sent by the application during development, preventing them from being sent to real users.
 
 *Key Security & DevOps Features Implemented*
+
 - High Availability (HA): Eliminates single points of failure at the web layer through replica scaling.
 
 - Data Consistency: Maintained through a automated Master-Slave replication pipeline.

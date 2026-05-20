@@ -1,0 +1,6 @@
+[mysqld]
+server-id=1
+log-bin=mysql-bin
+binlog-do-db=library_app_db
+binlog_format=ROW
+bind-address=0.0.0.0
